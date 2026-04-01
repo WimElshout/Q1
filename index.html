@@ -6,7 +6,17 @@
 </head>
 <body>
   <h1>Vraag 1</h1>
-  <p>Wat is 2 + 2?</p>
+  <p>Groepeer de Waalse, Vlaamse en Dialect woorden en zet ze op per groep in alfabetische volgorde
+  1. Etagere
+  2. Goesting
+  3. Placard
+  4. Stoefer
+  5. Cellier
+  6. Plezant
+  7. Fourneau
+  8. Wulder
+  9. Tartelette
+  Wat is is de eerste letter van het woord van iedere groep? Zet deze achter elkaar:</p>
 
   <input id="a">
   <button onclick="check()">Controleer</button>
@@ -16,7 +26,7 @@
   <script>
     function check(){
       const v = document.getElementById('a').value.trim().toLowerCase();
-      if(v === "4" || v === "vier"){
+      if(v === "CGF" || v === "CGF"){
         document.body.innerHTML = "<h2>Goed! 🎉</h2><p>Hier komt straks QR 2.</p>";
       } else {
         document.getElementById('f').textContent = "Nog niet goed, probeer opnieuw.";
