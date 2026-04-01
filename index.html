@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <title>Vraag 1</title>
+</head>
+<body>
+  <h1>Vraag 1</h1>
+  <p>Wat is 2 + 2?</p>
+
+  <input id="a">
+  <button onclick="check()">Controleer</button>
+
+  <p id="f"></p>
+
+  <script>
+    function check(){
+      const v = document.getElementById('a').value.trim().toLowerCase();
+      if(v === "4" || v === "vier"){
+        document.body.innerHTML = "<h2>Goed! 🎉</h2><p>Hier komt straks QR 2.</p>";
+      } else {
+        document.getElementById('f').textContent = "Nog niet goed, probeer opnieuw.";
+      }
+    }
+  </script>
+</body>
+</html>
