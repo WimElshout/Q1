@@ -6,33 +6,35 @@
 </head>
 <body>
   <h1>Vraag 1</h1>
-  <p>Groepeer de Waalse, Vlaamse en Dialect woorden en zet ze op per groep in alfabetische volgorde
-  1. Etagere
-  2. Goesting
-  3. Placard
-  4. Stoefer
-  5. Cellier
-  6. Plezant
-  7. Fourneau
-  8. Wulder
-  9. Tartelette
-  Wat is is de eerste letter van het woord van iedere groep? Zet deze achter elkaar:</p>
+ 
+<p>Groepeer de Waalse, Vlaamse en Dialect woorden en zet ze per groep alfabetisch:</p>
+<ol>
+  <li>Etagere</li>
+  <li>Goesting</li>
+  <li>Placard</li>
+  <li>Stoefer</li>
+  <li>Cellier</li>
+  <li>Plezant</li>
+  <li>Fourneau</li>
+  <li>Wulder</li>
+  <li>Tartelette</li>
+</ol>
+<p>Wat is de eerste letter van het woord van iedere groep? Zet deze achter elkaar:</p>
+``
 
-  <input id="a">
-  <button onclick="check()">Controleer</button>
+<script>
+  function check(){
+    const v = document.getElementById('a').value
+      .toLowerCase()
+      .replace(/[^a-z]/g, ""); // haalt spaties, komma’s, streepjes, enters weg
 
-  <p id="f"></p>
-
-  <script>
-    function check(){
-  const v = document.getElementById('a').value.trim().toLowerCase();
-  if(v === "cgf"){
-    document.body.innerHTML = "<h2>Goed! 🎉</h2><p>Hier komt straks QR 2.</p>";
-  } else {
-    document.getElementById('f').textContent = "Nog niet goed, probeer opnieuw.";
+    if(v === "cgf"){
+      document.body.innerHTML = "<h2>Goed! 🎉</h2><p>Hier komt straks QR 2.</p>";
+    } else {
+      document.getElementById('f').textContent = "Nog niet goed, probeer opnieuw.";
+    }
   }
-}
+</script>
 
-  </script>
 </body>
 </html>
