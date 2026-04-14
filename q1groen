@@ -1,1 +1,24 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vraag 1</title>
+  <style>
+    body{font-family:system-ui,Segoe UI,Roboto,Arial; margin:24px; max-width:800px}
+    input{padding:10px; font-size:16px; width:220px}
+    button{padding:10px 14px; font-size:16px; margin-left:8px; cursor:pointer}
+    #f{margin-top:12px; font-weight:600}
+  </style>
+</head>
+<body>
+  <h1>De Taalcodekraker Vraag 1</h1>
+
+  <p>Kijk juste naast le frigo</p>
+  
+
+
+  </script>
+</body>
+</html>
 
